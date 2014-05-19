@@ -23,8 +23,12 @@ class Validator {
     {
         $rules = !empty($rules) ? $rules : $this->rules;
 
-        if (!$rules)
+        if ($rules === null)
             throw new \InvalidArgumentException('Missing validation rules');
+
+        if (!count($rules))
+            // No rules, skip validation
+            return true;
 
         $this->validation = $this->validator->make(
             $data,
