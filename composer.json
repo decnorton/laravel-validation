@@ -1,0 +1,20 @@
+{
+    "name": "dec/validation",
+    "description": "",
+    "authors": [
+        {
+            "name": "Dec Norton",
+            "email": "decnorton@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Dec\\Validation": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
