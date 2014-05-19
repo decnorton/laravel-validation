@@ -1,6 +1,6 @@
 {
     "name": "dec/validation",
-    "description": "",
+    "description": "Laravel validation helpers, including self-validating models",
     "authors": [
         {
             "name": "Dec Norton",
